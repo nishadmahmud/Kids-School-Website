@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  max-width: 1032px;
+  margin: 0px auto;
+  /* border: 5px solid black; */
+}
+
+html {
+  margin: 0;
+}
+
+/* Shared Styles */
+.orange {
+  color: rgb(254, 163, 1);
+}
+
+.blue {
+  color: rgb(1, 172, 253);
+}
+
+.aqua {
+  color: rgb(5, 212, 223);
+}
+
+.purple {
+  color: rgb(93, 88, 239);
+}
+
+.text-primary {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.text-secondary {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.display-flex {
+  display: flex;
+  justify-content: center;
+}
+
+/* Navbar Styles */
+
+.nav-name {
+  font-size: 1.78rem;
+  font-weight: 700;
+  color: rgb(17, 17, 17);
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+}
+
+nav ul {
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 28px;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.nav-logo {
+  align-items: center;
+  gap: 9px;
+}
+
+.nav-font-p {
+  font-size: 1.11rem;
+  font-weight: 700;
+}
+
+.nav-font-s {
+  font-size: 1.11rem;
+  font-weight: 500;
+}
+
+.nav-btn {
+  color: white;
+  background-color: rgb(254, 163, 1);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.11rem;
+  font-weight: 500;
+  width: 175px;
+  height: 44px;
+}
+
+.nav-btn:hover {
+  color: rgb(254, 163, 1);
+  background-color: white;
+  border: 1px solid rgb(254, 163, 1);
+}
+
+.menu{
+   display: none;
+}
+
+
+/* mobile responsive */
+
+@media screen and (max-width:576px) {
+   .navbar{
+      justify-content: space-around;
+      gap:253px;
+      margin-top: 18px;
+   }
+   .menu{
+      display: block;
+      margin-left: -20px;
+   }
+   .nav-name, .nav-link, .nav-btn{
+      display: none;
+   }
+   .logo {
+      width: 40px;
+      height: 40px;
+    }
+}
