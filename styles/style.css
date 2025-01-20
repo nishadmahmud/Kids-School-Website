@@ -182,7 +182,8 @@ nav li a {
 /* Body */
 .body-section {
   margin-top: 0;
-  background: url(../assets/bg.png);
+  background: url(../assets/bg.png),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
 }
 
 /* Curriculum */
@@ -343,6 +344,17 @@ nav li a {
   background-color: white;
   border: 1px solid rgb(254, 163, 1);
 }
+/* marquee */
+.mrq {
+  font-size: 1em;
+  color: rgb(55, 142, 196);
+  background-color: rgb(238, 242, 249);
+  padding: 10px;
+  border: 1px solid rgb(55, 142, 196);
+  border-radius: 6px;
+  margin-top: 40px;
+  margin-bottom: -30px;
+}
 
 /* mobile responsive */
 
@@ -396,14 +408,14 @@ nav li a {
 
   /* curriculum */
 
-  .curriculum-cards{
-   flex-direction: column;
+  .curriculum-cards {
+    flex-direction: column;
   }
-  .curriculum-title{
-   font-size: 1.5rem;
-   margin-bottom: 17px;
+  .curriculum-title {
+    font-size: 1.5rem;
+    margin-bottom: 17px;
   }
-  .arrow{
-   display: none;
+  .arrow {
+    display: none;
   }
 }
