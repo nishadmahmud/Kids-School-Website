@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-  max-width: 1032px;
   margin: 0px auto;
   /* border: 5px solid black; */
 }
@@ -11,6 +10,16 @@ html {
 }
 
 /* Shared Styles */
+.container-size {
+  max-width: 1032px;
+  margin: 0 auto;
+  /* border: 5px solid black; */
+}
+
+.black {
+  color: rgb(17, 17, 17);
+}
+
 .orange {
   color: rgb(254, 163, 1);
 }
@@ -75,7 +84,6 @@ nav li a {
 .navbar {
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 16px;
 }
 
 .nav-logo {
@@ -110,28 +118,74 @@ nav li a {
   border: 1px solid rgb(254, 163, 1);
 }
 
-.menu{
-   display: none;
+.menu {
+  display: none;
 }
 
+/* Banner Style */
+.banner-img {
+  width: 400px;
+}
+
+.banner {
+  gap: 44px;
+}
+
+.banner-content {
+  padding: 106px 0px;
+  /* margin: 106px 0px;; */
+  /* border: 3px solid black; */
+}
+
+.banner-title {
+  font-size: 3.11rem;
+  font-weight: 700;
+  line-height: 3.39rem;
+  margin-bottom: 21px;
+}
+
+.banner-description {
+  font-size: 1.11rem;
+  font-weight: 400;
+  line-height: 1.39rem;
+}
+
+.btn {
+  color: white;
+  background: rgb(17, 17, 17);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.11rem;
+  font-weight: 700;
+  width: 175px;
+  height: 44px;
+}
+
+.btn:hover {
+  color: rgb(17, 17, 17);
+  background: white;
+  border: 1px solid black;
+}
 
 /* mobile responsive */
 
-@media screen and (max-width:576px) {
-   .navbar{
-      justify-content: space-around;
-      gap:253px;
-      margin-top: 18px;
-   }
-   .menu{
-      display: block;
-      margin-left: -20px;
-   }
-   .nav-name, .nav-link, .nav-btn{
-      display: none;
-   }
-   .logo {
-      width: 40px;
-      height: 40px;
-    }
+@media screen and (max-width: 576px) {
+  .navbar {
+    justify-content: space-around;
+    gap: 253px;
+    margin-top: 18px;
+  }
+  .menu {
+    display: block;
+    margin-left: -20px;
+  }
+  .nav-name,
+  .nav-link,
+  .nav-btn {
+    display: none;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
 }
