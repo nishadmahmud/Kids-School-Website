@@ -121,6 +121,9 @@ nav li a {
 .menu {
   display: none;
 }
+.nav-hr {
+  display: none;
+}
 
 /* Banner Style */
 .banner-img {
@@ -182,7 +185,8 @@ nav li a {
   .navbar {
     justify-content: space-around;
     gap: 253px;
-    margin-top: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
   .menu {
     display: block;
@@ -196,6 +200,11 @@ nav li a {
   .logo {
     width: 40px;
     height: 40px;
+  }
+  .nav-hr{
+   display: block;
+   border: none;
+   border-bottom: 1px solid rgb(254, 163, 1);
   }
   /* banner */
   .banner {
@@ -214,8 +223,8 @@ nav li a {
     margin: 0 auto;
   }
 
-  .banner-title{
-   font-size: 1.9rem;
-   line-height: 2.2rem;
+  .banner-title {
+    font-size: 1.9rem;
+    line-height: 2.2rem;
   }
 }
