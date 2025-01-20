@@ -124,15 +124,23 @@ nav li a {
 
 /* Banner Style */
 .banner-img {
-  width: 400px;
+  width: 500px;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
 }
 
 .banner {
   gap: 44px;
+  /* border: 2px solid black; */
 }
 
 .banner-content {
   padding: 106px 0px;
+  max-width: 560px;
+  /* margin-left: -35px; */
   /* margin: 106px 0px;; */
   /* border: 3px solid black; */
 }
@@ -145,7 +153,7 @@ nav li a {
 }
 
 .banner-description {
-  font-size: 1.11rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.39rem;
 }
@@ -170,6 +178,7 @@ nav li a {
 /* mobile responsive */
 
 @media screen and (max-width: 576px) {
+  /* navbar */
   .navbar {
     justify-content: space-around;
     gap: 253px;
@@ -187,5 +196,26 @@ nav li a {
   .logo {
     width: 40px;
     height: 40px;
+  }
+  /* banner */
+  .banner {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .banner-content {
+    padding: 0px 20px 0px 20px;
+    gap: 14px;
+    margin-top: -50px;
+  }
+
+  .banner-img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .banner-title{
+   font-size: 1.9rem;
+   line-height: 2.2rem;
   }
 }
