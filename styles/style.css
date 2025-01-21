@@ -508,4 +508,23 @@ footer {
   .arrow {
     display: none;
   }
+
+
+  /* Footer */
+  .footer-container{
+    grid-template-columns: repeat(1,1fr);
+    padding-left: 18px;
+    padding-right: 18px;
+    gap: 10px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .footer-ends{
+    flex-direction: column;
+  }
+
+  .social-links{
+    justify-content: start;
+  }
 }
