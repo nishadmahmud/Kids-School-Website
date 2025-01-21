@@ -183,6 +183,7 @@ nav li a {
   font-weight: 700;
   width: 175px;
   height: 44px;
+  font-family: Quicksand;
 }
 
 .btn:hover {
@@ -195,7 +196,7 @@ nav li a {
 .body-section {
   margin-top: 0;
   background: url(../assets/bg.png),
-    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 50%);
 }
 
 /* Curriculum */
@@ -369,6 +370,60 @@ nav li a {
 }
 
 /* Stories */
+.story{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 72px;
+  padding-bottom: 55px;
+}
+
+.story-title{
+  font-size: 2.55rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-align: center;
+}
+.story-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 17px;
+  /* border: 2px solid black; */
+}
+
+.story-main{
+  border-radius: 14px;
+  background: white;
+  max-width: 480px;
+}
+.story-main-img{
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  width: 100%;
+}
+
+.story-main-info{
+  padding-left: 34px;
+  padding-right: 60px;
+}
+
+.small-story{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 17px;
+}
+
+.story-card img{
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  width: 100%;
+}
+
+.story-card{
+  background: white;
+  border-radius: 14px;
+  max-width: 258px;
+}
 
 /* Footer */
 
@@ -508,6 +563,8 @@ footer {
   .arrow {
     display: none;
   }
+
+  /* Story */
 
 
   /* Footer */
